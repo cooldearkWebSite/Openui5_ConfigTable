@@ -1,0 +1,31 @@
+<core:View controllerName="mgmtPRConfing.controller.main" 
+	xmlns:core="sap.ui.core" 
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"	
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	class="sapUiSizeCompact"
+	displayBlock="true">    
+   		<App id="mainApp">
+   		    <!-- Display -->
+			<Page id="page_display" title="委任申請單申請日期配置">
+			    <content>
+					<core:Fragment fragmentName="mgmtPRConfing.fragment.configList" type="XML" />
+				</content>				
+			</Page>				
+			<!-- Add new -->
+			<Page id="page_add" title="委任申請單申請日期配置">
+				<content>
+					<core:Fragment fragmentName="mgmtPRConfing.fragment.level" type="XML" />
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button id="saveButton" text="保存" press="submit"/>
+						<Button text="取消" press="cancel"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</App>    
+</core:View>
