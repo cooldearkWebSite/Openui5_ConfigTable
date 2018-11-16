@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>	
+		<link href="../css/as.css" rel="stylesheet" type="text/css">	
+		<script 
+				id="sap-ui-bootstrap"
+				src="/sapui5/resources/sap-ui-core.js"
+				data-sap-ui-libs="sap.ui.layout,sap.m,sap.ui.table"
+				data-sap-ui-bindingSyntax="complex"
+				data-sap-ui-compatVersion="edge"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{
+					"mgmtPRConfing": "./"
+				}' 
+		>	
+		</script>
+		<script>
+				sap.ui.getCore().attachInit(function () {
+		            new sap.ui.core.ComponentContainer({ name : "mgmtPRConfing" }).placeAt("content");
+		         });
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">	    
+		<div id="content"></div>
+	</body>
+</html>
