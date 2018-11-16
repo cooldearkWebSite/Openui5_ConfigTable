@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:t="sap.ui.table">
+    <Panel headerText="修改委任申請日期" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding">						
+	<content>
+ 	<f:SimpleForm
+            minWidth="1024"
+            maxContainerCols="10"
+            editable="true"
+            layout="ResponsiveGridLayout"
+            labelSpanL="3"
+            labelSpanM="3"
+            emptySpanL="4"
+            emptySpanM="4"
+            columnsL="1"
+            columnsM="1"
+            class="editableForm">
+          <f:content>                    
+		    <Label required="false" text="設定名稱"/>
+		    <Input value="{ZData>/tmp_item/ConfigName}" editable="false"/>
+			<Label required="true" text="設定數值"/>
+			<Input valueState="{textValue>/status}" valueStateText="{textValue>/string}" 
+			maxLength="2" liveChange="checkInput" value="{ZData>/tmp_item/ConfigValue}"/>
+			
+	       </f:content>
+    </f:SimpleForm>  
+    </content>
+    </Panel>
+</core:FragmentDefinition>
